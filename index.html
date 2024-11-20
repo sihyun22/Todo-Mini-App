@@ -1,0 +1,78 @@
+<!--
+ 0. 현재 시간과 날씨 (날씨 지역도 설정할 수 있을까?) 
+ 1. Todo List 
+ 2. 할일 입력 input 창, 카테고리 설정? / 추가 버튼 / 리셋 버튼
+ 3. 전체 , 진행중, 완료한 것
+ 4. todo box / 입력한 할일 나열 과 완료 버튼과 삭제 버튼
+ 5. 
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Mini App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+        integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-right">
+            <h1><i class="fa-solid fa-note-sticky"></i> Todo List</h1>
+        </div>
+        <div class="header-left">
+            <ul class="header-menu">
+                <li>Date</li>
+                <li>Weather</li>
+                <li>Settings</li>
+            </ul>
+        </div>
+    </header>
+    <hr class="header-line">
+    <main>
+        <div class="box-line">
+        <section class="todo-box">
+            <div class="user-input">
+                <div class="input-text">
+                    <label for="input-todo"></label>
+                    <input type="text" id="inputTodo" placeholder="할 일을 입력해보세요!">
+                </div>
+                <div class="input-btn">
+                    <button><i class="fa-solid fa-square-plus fa-2x"></i></button>
+                    <button><i class="fa-solid fa-rotate-right fa-2x"></i></button>
+                </div>
+            </div>
+            <hr class="input-line">
+            <div class="todo-menu">
+                <ul class="todo-menu-list">
+                    <li>전체</li>
+                    <li>진행중</li>
+                    <li>완료됨</li>
+                </ul>
+            </div>
+            
+            <div class="todo-list">
+                
+                <ul style="list-style: disc;">
+                    <li>css 복습하기<span><hr class="list-under-line"></span></li>
+                    <li>자격증 공부하기<span><hr class="list-under-line"></span></li>
+                    <li>운동가기<span><hr class="list-under-line"></span></li>
+                    <div class="list-btn-group">
+                        <button class="todo-list-btn"><i class="fa-solid fa-check fa-2x"></i></button>
+                        <button class="todo-list-btn"><i class="fa-solid fa-heart fa-2x"></i></button>
+                        <button class="todo-list-btn"><i class="fa-solid fa-trash fa-2x"></i></button>
+
+                    </div>
+                </ul>
+            </div>
+        </section>
+    </div>
+    </main>
+</body>
+
+</html>
